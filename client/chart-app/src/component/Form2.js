@@ -30,6 +30,7 @@ function Form2() {
       console.error('Error saving data:', error);
     }
     setState(state+1);
+    alert("Data saved successfully")
   };
 
   return (
@@ -59,7 +60,7 @@ function Form2() {
             <br />
           </div>
         ))}
-        <button type="submit" className='submit-button'>Submit</button>
+        <button type="submit" className='submit-button' >Submit</button>
       </form>
       <h2 className='title-2'> Sales  for Today</h2>
     </div>
