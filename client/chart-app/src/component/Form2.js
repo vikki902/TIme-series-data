@@ -22,7 +22,9 @@ function Form2() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post('http://localhost:3001/api/data', formData);
+      // await axios.post('http://localhost:3001/api/data', formData);
+
+      await axios.post('https://time-series-data.onrender.com/api/data', formData);
       console.log('Data saved successfully');
     } catch (error) {
       console.error('Error saving data:', error);

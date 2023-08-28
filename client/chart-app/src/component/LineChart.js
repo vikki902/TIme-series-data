@@ -31,7 +31,8 @@ const LineChart = () => {
     let data;
 
     const fetchData = async()=>{
-      const { data } = await axios.get("http://localhost:3001/api/data")
+      // const { data } = await axios.get("http://localhost:3001/api/data")
+       const { data } = await axios.get("https://time-series-data.onrender.com/api/data")
      
        console.log(data)
       setChartData({
